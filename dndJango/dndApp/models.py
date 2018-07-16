@@ -8,6 +8,7 @@ from django.db import models
 class Team(models.Model):
 	teamId = models.CharField(max_length=100)
 	description = models.CharField(max_length=2000)
+	title = models.CharField(max_length=100, default='title')
 
 	def __str__(self):
 		return self.teamId
@@ -15,6 +16,7 @@ class Team(models.Model):
 class Level(models.Model):
 	levelId = models.CharField(max_length=100)
 	description = models.CharField(max_length=2000)
+	title = models.CharField(max_length=100, default='title')
 
 	def __str__(self):
 		return self.levelId
@@ -22,6 +24,7 @@ class Level(models.Model):
 class Product(models.Model):
 	productId = models.CharField(max_length=100)
 	description = models.CharField(max_length=2000)
+	title = models.CharField(max_length=100, default='title')
 
 	def __str__(self):
 		return self.productId
@@ -29,6 +32,7 @@ class Product(models.Model):
 class Channel(models.Model):
 	channelId = models.CharField(max_length=100)
 	description = models.CharField(max_length=2000)
+	title = models.CharField(max_length=100, default='title')
 
 	def __str__(self):
 		return self.channelId
@@ -36,6 +40,7 @@ class Channel(models.Model):
 class Payperiod(models.Model):
 	payperiodId = models.CharField(max_length=100)
 	description = models.CharField(max_length=2000)
+	title = models.CharField(max_length=100, default='title')
 
 	def __str__(self):
 		return self.payperiodId
@@ -43,6 +48,7 @@ class Payperiod(models.Model):
 class Component(models.Model):
 	componentId = models.CharField(max_length=100)
 	description = models.CharField(max_length=2000)
+	title = models.CharField(max_length=100, default='title')
 
 	def __str__(self):
 		return self.componentId
